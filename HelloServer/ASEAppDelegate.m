@@ -39,7 +39,7 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 	// This allows us to do all kinds of customizations.
 	[httpServer setConnectionClass:[ASEHTTPConnection class]];
 	
-	NSError *error = nil;
+	NSError * error = nil;
 	if(![httpServer start:&error])
 	{
 		DDLogError(@"Error starting HTTP Server: %@", error);
