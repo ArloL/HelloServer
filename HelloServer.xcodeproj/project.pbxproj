@@ -13,7 +13,30 @@
 		270613F8156EF1C6009C6381 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 270613F6156EF1C6009C6381 /* Credits.rtf */; };
 		270613FB156EF1C6009C6381 /* ASEAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 270613FA156EF1C6009C6381 /* ASEAppDelegate.m */; };
 		270613FE156EF1C6009C6381 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 270613FC156EF1C6009C6381 /* MainMenu.xib */; };
+		27061407156EF237009C6381 /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27061404156EF237009C6381 /* CocoaAsyncSocket.framework */; };
+		27061408156EF237009C6381 /* CocoaHTTPServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27061405156EF237009C6381 /* CocoaHTTPServer.framework */; };
+		27061409156EF237009C6381 /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27061406156EF237009C6381 /* CocoaLumberjack.framework */; };
+		2706140B156EF264009C6381 /* CocoaAsyncSocket.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27061404156EF237009C6381 /* CocoaAsyncSocket.framework */; };
+		2706140C156EF264009C6381 /* CocoaHTTPServer.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27061405156EF237009C6381 /* CocoaHTTPServer.framework */; };
+		2706140D156EF264009C6381 /* CocoaLumberjack.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27061406156EF237009C6381 /* CocoaLumberjack.framework */; };
+		27061424156EF446009C6381 /* ASEHTTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 27061423156EF446009C6381 /* ASEHTTPConnection.m */; };
+		27061427156EF69E009C6381 /* ASEHelloResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 27061426156EF69E009C6381 /* ASEHelloResponse.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2706140A156EF259009C6381 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2706140B156EF264009C6381 /* CocoaAsyncSocket.framework in CopyFiles */,
+				2706140C156EF264009C6381 /* CocoaHTTPServer.framework in CopyFiles */,
+				2706140D156EF264009C6381 /* CocoaLumberjack.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		270613E3156EF1C5009C6381 /* HelloServer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloServer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -21,14 +44,21 @@
 		270613EA156EF1C5009C6381 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		270613EB156EF1C5009C6381 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		270613EC156EF1C5009C6381 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		270613EF156EF1C5009C6381 /* HelloServer-Info.plist */ = {isa = PBXFileReference; path = "HelloServer-Info.plist"; sourceTree = "<group>"; };
+		270613EF156EF1C5009C6381 /* HelloServer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HelloServer-Info.plist"; sourceTree = "<group>"; };
 		270613F1156EF1C6009C6381 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		270613F3156EF1C6009C6381 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		270613F5156EF1C6009C6381 /* HelloServer-Prefix.pch */ = {isa = PBXFileReference; path = "HelloServer-Prefix.pch"; sourceTree = "<group>"; };
+		270613F5156EF1C6009C6381 /* HelloServer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HelloServer-Prefix.pch"; sourceTree = "<group>"; };
 		270613F7156EF1C6009C6381 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		270613F9156EF1C6009C6381 /* ASEAppDelegate.h */ = {isa = PBXFileReference; path = ASEAppDelegate.h; sourceTree = "<group>"; };
+		270613F9156EF1C6009C6381 /* ASEAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASEAppDelegate.h; sourceTree = "<group>"; };
 		270613FA156EF1C6009C6381 /* ASEAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASEAppDelegate.m; sourceTree = "<group>"; };
 		270613FD156EF1C6009C6381 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		27061404156EF237009C6381 /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaAsyncSocket.framework; path = Frameworks/CocoaAsyncSocket.framework; sourceTree = "<group>"; };
+		27061405156EF237009C6381 /* CocoaHTTPServer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaHTTPServer.framework; path = Frameworks/CocoaHTTPServer.framework; sourceTree = "<group>"; };
+		27061406156EF237009C6381 /* CocoaLumberjack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjack.framework; path = Frameworks/CocoaLumberjack.framework; sourceTree = "<group>"; };
+		27061422156EF446009C6381 /* ASEHTTPConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASEHTTPConnection.h; sourceTree = "<group>"; };
+		27061423156EF446009C6381 /* ASEHTTPConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASEHTTPConnection.m; sourceTree = "<group>"; };
+		27061425156EF69E009C6381 /* ASEHelloResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASEHelloResponse.h; sourceTree = "<group>"; };
+		27061426156EF69E009C6381 /* ASEHelloResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASEHelloResponse.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +67,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				270613E8156EF1C5009C6381 /* Cocoa.framework in Frameworks */,
+				27061407156EF237009C6381 /* CocoaAsyncSocket.framework in Frameworks */,
+				27061408156EF237009C6381 /* CocoaHTTPServer.framework in Frameworks */,
+				27061409156EF237009C6381 /* CocoaLumberjack.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +96,9 @@
 		270613E6156EF1C5009C6381 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				27061404156EF237009C6381 /* CocoaAsyncSocket.framework */,
+				27061405156EF237009C6381 /* CocoaHTTPServer.framework */,
+				27061406156EF237009C6381 /* CocoaLumberjack.framework */,
 				270613E7156EF1C5009C6381 /* Cocoa.framework */,
 				270613E9156EF1C5009C6381 /* Other Frameworks */,
 			);
@@ -84,6 +120,10 @@
 			children = (
 				270613F9156EF1C6009C6381 /* ASEAppDelegate.h */,
 				270613FA156EF1C6009C6381 /* ASEAppDelegate.m */,
+				27061422156EF446009C6381 /* ASEHTTPConnection.h */,
+				27061423156EF446009C6381 /* ASEHTTPConnection.m */,
+				27061425156EF69E009C6381 /* ASEHelloResponse.h */,
+				27061426156EF69E009C6381 /* ASEHelloResponse.m */,
 				270613FC156EF1C6009C6381 /* MainMenu.xib */,
 				270613EE156EF1C5009C6381 /* Supporting Files */,
 			);
@@ -112,6 +152,7 @@
 				270613DF156EF1C5009C6381 /* Sources */,
 				270613E0156EF1C5009C6381 /* Frameworks */,
 				270613E1156EF1C5009C6381 /* Resources */,
+				2706140A156EF259009C6381 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -168,6 +209,8 @@
 			files = (
 				270613F4156EF1C6009C6381 /* main.m in Sources */,
 				270613FB156EF1C6009C6381 /* ASEAppDelegate.m in Sources */,
+				27061424156EF446009C6381 /* ASEHTTPConnection.m in Sources */,
+				27061427156EF69E009C6381 /* ASEHelloResponse.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +294,10 @@
 		27061402156EF1C6009C6381 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Frameworks\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HelloServer/HelloServer-Prefix.pch";
 				INFOPLIST_FILE = "HelloServer/HelloServer-Info.plist";
@@ -262,6 +309,10 @@
 		27061403156EF1C6009C6381 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Frameworks\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HelloServer/HelloServer-Prefix.pch";
 				INFOPLIST_FILE = "HelloServer/HelloServer-Info.plist";
