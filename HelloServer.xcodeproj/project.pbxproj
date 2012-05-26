@@ -21,6 +21,7 @@
 		2706140D156EF264009C6381 /* CocoaLumberjack.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27061406156EF237009C6381 /* CocoaLumberjack.framework */; };
 		27061424156EF446009C6381 /* ASEHTTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 27061423156EF446009C6381 /* ASEHTTPConnection.m */; };
 		27061427156EF69E009C6381 /* ASEHelloResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 27061426156EF69E009C6381 /* ASEHelloResponse.m */; };
+		27B17042157166ED00BB2B16 /* ASEHelloServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B17041157166ED00BB2B16 /* ASEHelloServer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -59,6 +60,8 @@
 		27061423156EF446009C6381 /* ASEHTTPConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASEHTTPConnection.m; sourceTree = "<group>"; };
 		27061425156EF69E009C6381 /* ASEHelloResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASEHelloResponse.h; sourceTree = "<group>"; };
 		27061426156EF69E009C6381 /* ASEHelloResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASEHelloResponse.m; sourceTree = "<group>"; };
+		27B17040157166ED00BB2B16 /* ASEHelloServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASEHelloServer.h; sourceTree = "<group>"; };
+		27B17041157166ED00BB2B16 /* ASEHelloServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASEHelloServer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,10 +123,12 @@
 			children = (
 				270613F9156EF1C6009C6381 /* ASEAppDelegate.h */,
 				270613FA156EF1C6009C6381 /* ASEAppDelegate.m */,
-				27061422156EF446009C6381 /* ASEHTTPConnection.h */,
-				27061423156EF446009C6381 /* ASEHTTPConnection.m */,
 				27061425156EF69E009C6381 /* ASEHelloResponse.h */,
 				27061426156EF69E009C6381 /* ASEHelloResponse.m */,
+				27B17040157166ED00BB2B16 /* ASEHelloServer.h */,
+				27B17041157166ED00BB2B16 /* ASEHelloServer.m */,
+				27061422156EF446009C6381 /* ASEHTTPConnection.h */,
+				27061423156EF446009C6381 /* ASEHTTPConnection.m */,
 				270613FC156EF1C6009C6381 /* MainMenu.xib */,
 				270613EE156EF1C5009C6381 /* Supporting Files */,
 			);
@@ -211,6 +216,7 @@
 				270613FB156EF1C6009C6381 /* ASEAppDelegate.m in Sources */,
 				27061424156EF446009C6381 /* ASEHTTPConnection.m in Sources */,
 				27061427156EF69E009C6381 /* ASEHelloResponse.m in Sources */,
+				27B17042157166ED00BB2B16 /* ASEHelloServer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +346,7 @@
 				27061403156EF1C6009C6381 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
