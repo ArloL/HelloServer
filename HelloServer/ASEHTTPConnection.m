@@ -37,4 +37,42 @@ static const int httpLogLevel = HTTP_LOG_LEVEL_WARN; // | HTTP_LOG_FLAG_TRACE;
 	return [super httpResponseForMethod:method URI:path];
 }
 
+/**
+ * This method is called immediately prior to sending the response headers.
+ * This method adds standard header fields, and then converts the response to an NSData object.
+ **/
+- (NSData *)preprocessResponse:(HTTPMessage *)response
+{
+	HTTPLogTrace();
+    
+    // Set the connection header if not already specified
+	NSString *connection = [response headerField:@"Connection"];
+	if (!connection) {
+		connection = [self shouldDie] ? @"close" : @"keep-alive";
+		[response setHeaderField:@"Connection" value:connection];
+	}
+	
+	// Override me to customize the response headers
+	// You'll likely want to add your own custom headers, and then return [super preprocessResponse:response]
+	
+	// Add optional response headers
+	if ([httpResponse respondsToSelector:@selector(httpHeaders)])
+	{
+		NSDictionary *responseHeaders = [httpResponse httpHeaders];
+		
+		NSEnumerator *keyEnumerator = [responseHeaders keyEnumerator];
+		NSString *key;
+		
+		while ((key = [keyEnumerator nextObject]))
+		{
+			NSString *value = [responseHeaders objectForKey:key];
+			
+			[response setHeaderField:key value:value];
+		}
+	}
+	
+	return [response messageData];
+}
+
+
 @end
