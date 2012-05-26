@@ -16,7 +16,19 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    self.helloServer = [ASEHelloServer new];
+    helloServer = [ASEHelloServer new];
+}
+
+-(void)applicationDidBecomeActive:(NSNotification *)notification
+{
+    if (!helloServer) {
+        helloServer = [ASEHelloServer new];
+    }
+}
+
+-(void)applicationWillTerminate:(NSNotification *)notification
+{
+    helloServer = nil;
 }
 
 @end
