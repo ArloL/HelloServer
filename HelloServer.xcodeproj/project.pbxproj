@@ -56,7 +56,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		270613E3156EF1C5009C6381 /* HelloServerOSX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloServerOSX.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		270613E3156EF1C5009C6381 /* HelloServer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloServer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		270613E7156EF1C5009C6381 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		270613EA156EF1C5009C6381 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		270613EB156EF1C5009C6381 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -72,7 +72,7 @@
 		27255A6F15716B1700235F15 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		27B17040157166ED00BB2B16 /* ASEHelloServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASEHelloServer.h; sourceTree = "<group>"; };
 		27B17041157166ED00BB2B16 /* ASEHelloServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASEHelloServer.m; sourceTree = "<group>"; };
-		27B170481571682000BB2B16 /* HelloServerIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloServerIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		27B170481571682000BB2B16 /* HelloServer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloServer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27B1704A1571682000BB2B16 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		27B1704C1571682000BB2B16 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		27B1704E1571682000BB2B16 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
@@ -143,8 +143,8 @@
 		270613E4156EF1C5009C6381 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				270613E3156EF1C5009C6381 /* HelloServerOSX.app */,
-				27B170481571682000BB2B16 /* HelloServerIOS.app */,
+				270613E3156EF1C5009C6381 /* HelloServer.app */,
+				27B170481571682000BB2B16 /* HelloServer.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -275,7 +275,7 @@
 			);
 			name = HelloServerOSX;
 			productName = HelloServer;
-			productReference = 270613E3156EF1C5009C6381 /* HelloServerOSX.app */;
+			productReference = 270613E3156EF1C5009C6381 /* HelloServer.app */;
 			productType = "com.apple.product-type.application";
 		};
 		27B170471571682000BB2B16 /* HelloServerIOS */ = {
@@ -292,7 +292,7 @@
 			);
 			name = HelloServerIOS;
 			productName = HelloServerIOS;
-			productReference = 27B170481571682000BB2B16 /* HelloServerIOS.app */;
+			productReference = 27B170481571682000BB2B16 /* HelloServer.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -481,7 +481,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HelloServerOSX/HelloServer-Prefix.pch";
 				INFOPLIST_FILE = "HelloServerOSX/HelloServer-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "$(PROJECT_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -496,7 +496,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HelloServerOSX/HelloServer-Prefix.pch";
 				INFOPLIST_FILE = "HelloServerOSX/HelloServer-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "$(PROJECT_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -515,7 +515,7 @@
 				GCC_PREFIX_HEADER = "HelloServerIOS/HelloServerIOS-Prefix.pch";
 				INFOPLIST_FILE = "HelloServerIOS/HelloServerIOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "$(PROJECT_NAME)";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
@@ -537,7 +537,7 @@
 				INFOPLIST_FILE = "HelloServerIOS/HelloServerIOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "$(PROJECT_NAME)";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
