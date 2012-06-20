@@ -1,0 +1,3 @@
+[submodule "Frameworks/CocoaHTTPServer"]
+	path = Frameworks/CocoaHTTPServer
+	url = https://github.com/ArloL/CocoaHTTPServer.git
